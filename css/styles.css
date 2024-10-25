@@ -12,7 +12,14 @@ html, body {
     opacity: 1;
 }
 
-.card-img-top {
-    transition: opacity 0.5s ease-in-out; /* Transição de opacidade */
-    opacity: 1; /* Começa totalmente visível */
+ /* Define a transição de opacidade e escala */
+ .card-img-top {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: scale(1); /* Define a escala padrão */
+}
+
+/* Classe para o efeito de escala */
+.scale-up {
+    transform: scale(1.01); /* Aumenta a escala temporariamente */
 }

@@ -8,12 +8,12 @@
     <title>Venort | Início</title>
 </head>
 <body>
-    <header class="d-flex flex-column align-items-center justify-content-center py-3">
-        <img src="images/logo.png" alt="Logo" class="mb-3" style="width: 300px;">
-
-        <!-- Navbar for larger screens -->
-        <nav class="navbar navbar-expand-sm d-none d-md-block">
-            <div class="container">
+    <header class="navbar navbar-expand-sm d-none d-md-block d-flex flex-column align-items-center justify-content-center py-3">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="images/logo.png" alt="Logo" style="width: 300px;">
+    
+            <!-- Navbar for larger screens -->
+            <nav class="navbar navbar-expand-sm">
                 <ul class="nav nav-tabs justify-content-center">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Início</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Empresa</a></li>
@@ -22,23 +22,27 @@
                     <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
+    </header>
+    
+    
 
+    <header class="navbar-expand-sm d-md-none d-flex flex-wrap align-items-center justify-content-center py-3">
+        <img src="images/logo.png" alt="Logo" style="width: 300px;">
         <!-- Offcanvas for mobile screens -->
-        <nav class="navbar navbar-expand-sm d-md-none">
+        <nav class="navbar">
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="container">
-                <button class="btn btn-primary text-left" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                    Menu
-                </button>
-
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasBottomLabel">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body small">
-                        <ul class="nav nav-pills flex-column">
+                        <ul class="nav nav-pills flex-column text-left">
                             <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Início</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Empresa</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Venor Jet Clean</a></li>
@@ -51,6 +55,8 @@
             </div>
         </nav>
     </header>
+    
+    
 
     <section class="container">
         <!-- Carousel Section -->
@@ -110,7 +116,8 @@
                     <div class="card shadow-sm">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card1.jpg">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Esse equipamento exclusivo para retrolavagem em retíficas garante uma maior 
+                                vida útilo ao rebolo e pode ser instalado em diversos tipos de retíficas.</p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +125,8 @@
                     <div class="card shadow-sm">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card2.jpg">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Projetos Especiais, Estudos em 3D, criaçao de soluções para linhas de 
+                                produção, desenvolvimento de máquinas e dispositivos para indústrias em geral.</p>
                         </div>
                     </div>
                 </div>
@@ -126,34 +134,58 @@
                     <div class="card shadow-sm">
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card3.jpg">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Retrofit de equipamentos em geral como lavadoras, furadeias, fresas, 
+                                com possibilidade de implementação de novos componentes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card4.jpg">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="card shadow-sm" style="height: 330px;">
+                        <img class="img-fluid" src="images/alta-pressao.png" style="width: 100%; height: 100%; object-fit: fill;">
+                    </div>
+                </div>                               
+                <div class="col">
+                    <div class="card shadow-sm" style="height: 330px;">
+                        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <img src="images/bosch-logo.svg" class="px-2 d-block w-100 h-100" alt="Image 1" style="object-fit: contain;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="images/petrobras-logo.svg" class="d-block w-100 h-100" alt="Image 2" style="object-fit: contain;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="images/dupont-logo.svg" class="d-block w-100 h-100" alt="Image 3" style="object-fit: contain;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="images/scania-logo.svg" class="d-block w-100 h-100" alt="Image 4" style="object-fit: contain;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="images/TRW-logo.svg" class="d-block w-100 h-100" alt="Image 5" style="object-fit: contain;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="images/unicamp-logo.svg" class="d-block w-100 h-100" alt="Image 6" style="object-fit: contain;">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card5.jpg">
+                    <div class="card shadow-sm bg-dark" style="height: 330px;">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h2 class="card-title">ENTRE EM CONTATO:</h2>
+                            <p class="card-text text-white fs-5 mt-1">
+                                +55 (19) 3245-0080 | +55(19) 99734-9881<br>
+                                venort@venort.com.br<br>
+                                Rua Aristeu Augusto nº 166<br>
+                                CEP 13065-230<br>
+                                Parque Via Norte - Campinas /SP</p>
+                            <div class="text-center">
+                                <a class="btn btn-primary btn-lg w-100" href="">Envie uma mensagem</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="images/card6.jpg">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
+                </div>                           
             </div>
         </div>
     </section>
@@ -170,7 +202,7 @@
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
                 <img class="bi me-2" width="200" height="75" src="images/logo.png">
             </a>
-    
+            
             <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Empresa</a></li>
@@ -189,45 +221,46 @@
         let cardImages = [
             "images/card7.jpg",
             "images/card8.jpg",
-            "images/card9.jpg",
-            "images/card10.jpg",
-            "images/card11.jpg",
-            "images/card12.jpg"
+            "images/card9.jpg"
         ];
-
+    
         let originalImages = [
             "images/card1.jpg",
             "images/card2.jpg",
-            "images/card3.jpg",
-            "images/card4.jpg",
-            "images/card5.jpg",
-            "images/card6.jpg"
+            "images/card3.jpg"
         ];
-
-        let currentIndex = 0;
-        let useOriginal = true; // Flag to indicate which set of images to use
-
+    
+        let useOriginal = true;
+    
         function changeCardImages() {
             const cardElements = document.querySelectorAll('.card-img-top');
-
+    
             cardElements.forEach((card, index) => {
-                card.style.opacity = 0; // Torna a imagem atual invisível
                 setTimeout(() => {
-                    if (useOriginal) {
-                        card.src = originalImages[index]; // Troca pela imagem original
-                    } else {
-                        card.src = cardImages[index]; // Troca pela nova imagem
-                    }
-                    card.style.opacity = 1; // Torna a nova imagem visível
-                }, 500); // Aguarda meio segundo antes de trocar a imagem
+                    card.classList.remove('scale-up'); // Remove a escala para suavizar a transição
+                    card.style.opacity = 0.5; // Ajusta a opacidade para suavizar a troca
+    
+                    setTimeout(() => {
+                        // Altera a imagem conforme a flag
+                        card.src = useOriginal ? originalImages[index] : cardImages[index];
+                        card.style.opacity = 1; // Restaura a opacidade total
+                        card.classList.add('scale-up'); // Aplica o efeito de escala temporariamente
+    
+                        // Remove o efeito de escala logo após aplicá-lo
+                        setTimeout(() => {
+                            card.classList.remove('scale-up');
+                        }, 500); // Remove após 500ms para voltar a escala ao normal
+                    }, 200); // Aguarda um pouco antes de trocar a imagem
+                }, index * 100); // Delay em cascata
             });
-
-            // Alterna entre as duas listas de imagens
+    
+            // Alterna entre as listas de imagens
             useOriginal = !useOriginal;
         }
-
+    
         setInterval(changeCardImages, 5000); // Troca a cada 5 segundos
     </script>
+    
     
 </body>
 </html>
