@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Venort | Início</title>
+</head>
+<body class="bg">
+    <header class="navbar navbar-expand-sm d-none d-md-block d-flex flex-column align-items-center justify-content-center py-3">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="../images/logo.png" alt="Logo" style="width: 300px;">
+    
+            <!-- Navbar for larger screens -->
+            <nav class="navbar navbar-expand-sm">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./empresa.html" class="nav-link">Empresa</a></li>
+                    <li class="nav-item"><a href="./jet_clean.html" class="nav-link">Venor Jet Clean</a></li>
+                    <li class="nav-item"><a href="./portifolio.html" class="nav-link active" aria-current="page">Portfólio</a></li>
+                    <li class="nav-item"><a href="./clientes.html" class="nav-link">Clientes</a></li>
+                    <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <header class="navbar-expand-sm d-md-none d-flex flex-wrap align-items-center justify-content-center py-3">
+        <img src="../images/logo.png" alt="Logo" style="width: 300px;">
+        <!-- Offcanvas for mobile screens -->
+        <nav class="navbar">
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small">
+                        <ul class="nav nav-pills flex-column text-left">
+                            <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+                            <li class="nav-item"><a href="./empresa.html" class="nav-link">Empresa</a></li>
+                            <li class="nav-item"><a href="./jet_clean.html" class="nav-link">Venor Jet Clean</a></li>
+                            <li class="nav-item"><a href="./portifolio.html" class="nav-link active" aria-current="page">Portfólio</a></li>
+                            <li class="nav-item"><a href="./clientes.html" class="nav-link">Clientes</a></li>
+                            <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Modal para o catálogo -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-body p-0">    
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Adicione mais imagens conforme necessário -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls d-flex justify-content-between"> <!-- Colocando os controles ao lado -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal para o segundo catálogo de imagens -->
+    <div class="modal fade" id="imageModalReforma" tabindex="-1" aria-labelledby="imageModalReformaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0">
+                <div class="modal-body p-0">
+                    <div id="carouselReformaIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carouselReformaInner">
+                            <!-- Imagens do segundo catálogo serão adicionadas aqui -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls d-flex justify-content-between">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselReformaIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselReformaIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Catálogo para telas de dispositivos mobile-->
+    <section class="container catalogo">
+        <div class="row d-sm-none d-sm-flex justify-content-center">
+            <div class="text-white p-2 rounded-end-5 mb-3" style="background-color: #0b689a;">
+                <h2 class="display-5 text">Projetos Especiais</h2>
+            </div>
+            <p>A VENORT desenvolve projetos e consultoria de equipamentos, dispositivos e automação 
+                industrial conforme a necessidade do cliente. Utilizando recursos atualizados para 
+                concepção dos nossos projetos, garantimos soluções inteligentes dentro do melhor 
+                custo-benefício para sua empresa.                    
+                Contamos com profissionais qualificados para o desenvolvimento e trabalhamos em 
+                constante atualização a fim de inserir novas tecnologias e seguir um padrão de 
+                alto nível visando os melhores resultados.</p>
+            <div class="text-center mt-3 mb-5">
+                <img class="img-fluid mb-2 border rounded fade-in catalog-image" src="../images/alta-pressao.png" data-index="1" style="width:300px; height:150px;">
+                <div class="caption">Catálogo de projetos</div>
+            </div>               
+        </div>
+
+        <!--Catálogo para dipositivos com telas grandes-->
+        <div class="row d-none d-md-flex">
+            <div class="col-md-3">
+                <div class="text-white p-2 rounded-end-5 mb-3" style="background-color: #0b689a;">
+                    <h2 class="display-5">Projetos Especiais</h2>
+                </div>
+                <p>A VENORT desenvolve projetos e consultoria de equipamentos, dispositivos e automação 
+                    industrial conforme a necessidade do cliente. Utilizando recursos atualizados para 
+                    concepção dos nossos projetos, garantimos soluções inteligentes dentro do melhor 
+                    custo-benefício para sua empresa.                    
+                    Contamos com profissionais qualificados para o desenvolvimento e trabalhamos em 
+                    constante atualização a fim de inserir novas tecnologias e seguir um padrão de 
+                    alto nível visando os melhores resultados.</p>
+                    <img class="img-fluid" src="../images/engrenaagem.jpg" style="height: 855px;">
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="1" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="2" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="3" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="4" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="5" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="6" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="7" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="8" style="width:300px; height:150px;">
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="9" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="10" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="11" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="12" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="13" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="14" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="15" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="16" style="width:300px; height:150px;">
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="17" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="18" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="19" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="20" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="21" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="22" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="23" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="24" style="width:300px; height:150px;">
+            </div>
+        </div>
+
+
+        
+        <div class="row d-sm-none d-sm-flex justify-content-center">
+            <div class="text-white p-2 rounded-end-5 mb-3" style="background-color: #0b689a;">
+                <h2 class="display-5 text">Reforma de máquinas</h2>
+            </div>
+            <p>Você sabia que a reforma de máquinas industriais pode aumentar significativamente 
+                a eficiência e a vida útil do seu equipamento? Com nosso serviço especializado, 
+                sua empresa ganha uma alternativa econômica e sustentável para manter suas operações 
+                em pleno funcionamento, evitando custos elevados com a aquisição de novos maquinários.</p>
+            <div class="text-center mt-3 mb-5">
+                <img class="img-fluid mb-2 border rounded fade-in catalog-image" src="../images/alta-pressao.png" data-index="1" style="width:300px; height:150px;">
+                <div class="caption">Catálogo de reformas</div>
+            </div>             
+        </div>
+
+        <div class="row mt-5 d-none d-md-flex">
+            <div class="col-md-3">
+                <div class="text-white p-2 rounded-end-5 mb-3" style="background-color: #0b689a;">
+                    <h2 class="display-5">Reforma de máquinas</h2>
+                </div>
+                <p>Você sabia que a reforma de máquinas industriais pode aumentar significativamente 
+                    a eficiência e a vida útil do seu equipamento? Com nosso serviço especializado, 
+                    sua empresa ganha uma alternativa econômica e sustentável para manter suas operações 
+                    em pleno funcionamento, evitando custos elevados com a aquisição de novos maquinários.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="1" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="2" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="3" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="4" style="width:300px; height:150px;">
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="5" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="6" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="7" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="8" style="width:300px; height:150px;">
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="9" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="10" style="width:300px; height:150px;">
+                <img class="img-fluid mb-2 border fade-in catalog-image" src="../images/alta-pressao.png" data-index="11" style="width:300px; height:150px;">
+                <img class="img-fluid border fade-in catalog-image" src="../images/alta-pressao.png" data-index="12" style="width:300px; height:150px;">
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid pb-2 px-5 text-white" style="background-color: #0b689a;">
+        <footer class="row justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4">
+                <p>Rua Aristeu Augusto nº 166 - CEP 13065-230 <br>
+                    Parque Via Norte - Campinas /SP <br>
+                    +55 (19) 3245-0080 / +55 (19) 99734-9881
+                </p>
+            </div>
+    
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+                <img class="bi me-2" width="250" height="75" src="../images/logo2.png">
+            </a>
+            
+            <ul class="nav col-md-4 justify-content-end d-none d-md-flex">
+                <li class="nav-item"><a href="#" class="link-light nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="link-light nav-link">Empresa</a></li>
+                <li class="nav-item"><a href="#" class="link-light nav-link">Venor Jet Clean</a></li>
+                <li class="nav-item"><a href="#" class="link-light nav-link">Portfólio</a></li>
+                <li class="nav-item"><a href="#" class="link-light nav-link">Clientes</a></li>
+                <li class="nav-item"><a href="#" class="link-light nav-link">Contato</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Modal para o primeiro catálogo de imagens
+        const imagesCatalogo1 = document.querySelectorAll('.catalog-image');
+        const modalCatalogo1 = new bootstrap.Modal(document.getElementById('imageModal'));
+        const carouselCatalogo1Inner = document.querySelector('.carousel-inner');
+    
+        imagesCatalogo1.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                updateCarouselImages(carouselCatalogo1Inner, imagesCatalogo1, index);
+                modalCatalogo1.show();
+            });
+        });
+    
+        // Modal para o segundo catálogo de imagens
+        const imagesCatalogo2 = document.querySelectorAll('.catalog-reforma-image');
+        const modalCatalogo2 = new bootstrap.Modal(document.getElementById('imageModalReforma'));
+        const carouselCatalogo2Inner = document.getElementById('carouselReformaInner');
+    
+        imagesCatalogo2.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                updateCarouselImages(carouselCatalogo2Inner, imagesCatalogo2, index);
+                modalCatalogo2.show();
+            });
+        });
+    
+        // Função para atualizar as imagens do carrossel em ambos os catálogos
+        function updateCarouselImages(carouselInner, images, selectedIndex) {
+            carouselInner.innerHTML = '';
+    
+            images.forEach((img, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                if (index === selectedIndex) {
+                    carouselItem.classList.add('active');
+                }
+    
+                const imgElement = document.createElement('img');
+                imgElement.src = img.src;
+                imgElement.classList.add('d-block', 'w-100');
+    
+                carouselItem.appendChild(imgElement);
+                carouselInner.appendChild(carouselItem);
+            });
+        }
+    </script>
+</body>
+</html>
