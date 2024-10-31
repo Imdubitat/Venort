@@ -68,3 +68,10 @@ html, body {
 #btn-contato:hover {
     background-color: #0b689a;
 }
+
+.bg-primary-dark {
+    background-color: #2a2b2c;
+}
+.bg-secondary-dark {
+    background-color: #545658;
+}
