@@ -26,7 +26,7 @@ Além disso, a empresa atua no **Retrofit de máquinas**, oferecendo soluções 
 
 ### 1. Clone o repositório:
 ```bash
-git clone https://github.com/SEU_USUARIO/venort.git
+git clone https://github.com/Imdubitat/venort.git
 ```
 ### 2. Abra o arquivo index.html no seu navegador de preferência
 
